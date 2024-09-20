@@ -1,0 +1,164 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyMCXWxxq6WPq4h/TWQcmXlr",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/juliacesarini/POO/blob/main/Aula-20/09\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "01) Elaborar um programa em python que solicite ao\n",
+        "usuário um valor inteiro e em seguida informe ao usuário se o valor é múltiplo de 3 ou não. A seguir o pseudocódigo referente ao algoritmo do programa:\n",
+        "\n",
+        "início\n",
+        "\n",
+        " inteiro: x, r\n",
+        "\n",
+        " Ler x\n",
+        "\n",
+        " r = resto da divisao de x por 3\n",
+        "\n",
+        " se (r==0) então:\n",
+        "\n",
+        " escrever \"Múltiplo\"\n",
+        "\n",
+        " senão:\n",
+        "\n",
+        " escrever \"Não múltiplo\"\n",
+        "\n",
+        " fim se\n",
+        "fim"
+      ],
+      "metadata": {
+        "id": "OYel8rvSjCcz"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "int(input(\"Digite um valor inteiro: \"))\n",
+        "r = x % 3\n",
+        "if (r == 0):\n",
+        "  print(\"Múltiplo\")\n",
+        "else:\n",
+        "  print(\"Não múltiplo\")\n",
+        "\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "cCmkJS1bjFjs",
+        "outputId": "c1a73253-30cb-4d46-ce9e-2bd953d9c96a"
+      },
+      "execution_count": 7,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite um valor inteiro: 3\n",
+            "Múltiplo\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "02) Dadas as notas a e b de um aluno, com pesos respectivamente 2 e 3; pede-se elaborar um programa em Python para calcular e exibir a média ponderada do aluno, verificar e informar, junto ao valor da sua média, se foi aprovado ou não (OBS: Considere aprovado se obtiver média igual ou superior a 5).\n"
+      ],
+      "metadata": {
+        "id": "p6vaEusGmAjp"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "A = float(input(\"Digite a nota A: \"))\n",
+        "B = float(input(\"Digite a nota B: \"))\n",
+        "media = (A+B)/2\n",
+        "if media >= 5:\n",
+        "  print (f\"Aprovado, sua media foi de {media}\")\n",
+        "\n",
+        "else:\n",
+        "  print (f\"Reprovado, sua media foi de {media}\")"
+      ],
+      "metadata": {
+        "id": "0_s7AHbJmZTs"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "03) Dado o algoritmo a seguir, elabore o código python do programa em questão:\n",
+        "\n",
+        "Início\n",
+        "\n",
+        "Leia os três valores: a, b e c.\n",
+        "\n",
+        "Compare os valores:\n",
+        "\n",
+        "Se a é menor ou igual a b e a é menor ou igual a c, então\n",
+        "a é o menor valor.\n",
+        "\n",
+        "Caso contrário, se b é menor ou igual a a e b é menor ou igual a c, entãob é o menor valor.\n",
+        "\n",
+        "Caso contrário,\n",
+        "c é o menor valor.\n",
+        "\n",
+        "Exiba o menor valor.\n",
+        "\n",
+        "Fim"
+      ],
+      "metadata": {
+        "id": "yMpwaF0zrJL3"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "A = float(input(\"Digite o valor A: \"))\n",
+        "B = float(input(\"Digite o valor B: \"))\n",
+        "C = float(input(\"Digite o valor C: \"))\n",
+        "if A <= B and A <= C :\n",
+        "  print (f\"A {A} é o menor valor.\")\n",
+        "\n",
+        "elif B <= A and B <= C:\n",
+        "  print (f\"B {B} é o menor valor.\")\n",
+        "\n",
+        "else:\n",
+        "  print (f\"C {C} é o menor valor.\")"
+      ],
+      "metadata": {
+        "id": "-FGA0P-Trc-8"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
